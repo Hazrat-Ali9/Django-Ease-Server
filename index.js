@@ -87,7 +87,7 @@ async function run() {
 			res.send({ token });
 		});
 
-		//clearing JWT Token
+		//Clearing JWT Token
 		app.post("/logout", async (req, res) => {
 			const user = req.body;
 			// console.log("logging out", user);
@@ -117,7 +117,7 @@ async function run() {
 			res.send(result);
 		});
 
-		// create-payment-intent
+		// Create-Payment-intent
 		app.post(
 			"/create-payment-intent",
 			verifyToken,
