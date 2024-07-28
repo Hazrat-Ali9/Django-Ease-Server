@@ -178,7 +178,7 @@ async function run() {
 			res.send(result);
 		});
 
-		// admin dashboard test
+		// Admin dashboard test
 		app.get("/tests", verifyToken, verifyAdmin, async (req, res) => {
 			const currentDate = new Date();
 			const result = await testsCollection.find().toArray();
