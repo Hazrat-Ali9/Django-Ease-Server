@@ -75,7 +75,7 @@ async function run() {
 		const bannersCollection = db.collection("banners");
 		const recommendationsCollection = db.collection("recommendations");
 
-		//creating JWT Token
+		//Creating JWT Token
 		app.post("/jwt", async (req, res) => {
 			const user = req.body;
 			// console.log("user for token", user);
