@@ -125,7 +125,7 @@ async function run() {
 				const price = req.body.price;
 				const priceInCent = parseFloat(price) * 100;
 				if (!price || priceInCent < 1) return;
-				// generate clientSecret
+				// Generate ClientSecret
 				const { client_secret } = await stripe.paymentIntents.create({
 					amount: priceInCent,
 					currency: "usd",
