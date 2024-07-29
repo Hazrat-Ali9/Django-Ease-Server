@@ -258,7 +258,7 @@ async function run() {
 			// Upload new Booking Data
 			const newData = req.body;
 			const result = await appointmentsCollection.insertOne(newData);
-			// update test Collection
+			// Update Test Collection
 			const updateDoc = {
 				$inc: { slots: -1 },
 			};
