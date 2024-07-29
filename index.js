@@ -205,7 +205,7 @@ async function run() {
 						$lte: endOfDay.toISOString(),
 					},
 				};
-				// Logging for debugging
+				// Logging for Debugging
 				console.log("Start of Day:", startOfDay.toISOString());
 				console.log("End of Day:", endOfDay.toISOString());
 				console.log("Query:", JSON.stringify(query));
