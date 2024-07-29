@@ -184,7 +184,7 @@ async function run() {
 			const result = await testsCollection.find().toArray();
 			res.send(result);
 		});
-		// common user test
+		// Common User Test
 		app.get("/available-tests", async (req, res) => {
 			const { filterDate, page, size } = req.query;
 			const itemsPerPage = parseInt(size);
