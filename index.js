@@ -8,7 +8,7 @@ require("dotenv").config();
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const port = process.env.PORT || 5000;
 const app = express();
-
+// Localhost cors
 const corsOptions = {
 	origin: [
 		"http://localhost:5173",
